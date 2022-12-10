@@ -7,7 +7,7 @@ namespace BasicCoreCodes
         {
             while (true)
             {
-                Console.WriteLine("1.Flipcoin\n2.LeapYear\n3.PrimeFactors\n4.QuotientRemainder\n5.Swapping");
+                Console.WriteLine("1.Flipcoin\n2.LeapYear\n3.PrimeFactors\n4.QuotientRemainder\n5.Swapping\n6.EvenorOdd");
                     
   
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -29,9 +29,13 @@ namespace BasicCoreCodes
                         QuotientRemainder qr = new QuotientRemainder();
                         qr.Division();
                         break;
-                        case 5:
+                    case 5:
                         Swap swap= new Swap();
                         swap.Swapping();
+                        break;
+                     case 6:
+                        EvenorOdd num = new EvenorOdd();
+                        num.Test();
                         break;
                     
 
