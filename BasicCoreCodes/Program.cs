@@ -7,7 +7,7 @@ namespace BasicCoreCodes
         {
             while (true)
             {
-                Console.WriteLine("1.Flipcoin");
+                Console.WriteLine("1.Flipcoin\n2.LeapYear");
                     
   
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -16,6 +16,10 @@ namespace BasicCoreCodes
                     case 1:
                         Flipcoin flipcoin = new Flipcoin();
                         flipcoin.CheckHeadTail();
+                        break;
+                    case 2:
+                        LeapYear leap = new LeapYear();
+                        leap.FindLeap();
                         break;
                     
 
