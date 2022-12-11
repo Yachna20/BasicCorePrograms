@@ -7,10 +7,9 @@ namespace BasicCoreCodes
         {
             while (true)
             {
-                Console.WriteLine("1.Flipcoin\n2.LeapYear\n3.PrimeFactors\n4.QuotientRemainder\n5.Swapping\n6.EvenorOdd");
-                    
-  
-                int option = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1.Flipcoin\n2.LeapYear\n3.PrimeFactors\n4.QuotientRemainder\n5.Swapping\n6.EvenorOdd"+
+                                   "\n7.VowelorConsonant");
+                     int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
@@ -37,10 +36,13 @@ namespace BasicCoreCodes
                         EvenorOdd num = new EvenorOdd();
                         num.Test();
                         break;
+                    case 7:
+                        Alphabet vow = new Alphabet();
+                        vow.VowelConsonant();
+                        break;
                     
-
-
-
+                        
+                        
                         
                     default:
                         Console.WriteLine("Please enter valid choice");

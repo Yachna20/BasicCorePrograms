@@ -9,10 +9,7 @@ namespace BasicCoreCodes
     internal class QuotientRemainder
     {
         int dividend, divisor, quotient, remainder;
-        
-        
-
-        public void Division()
+       public void Division()
         {
             
             Console.WriteLine("Enter dividend");

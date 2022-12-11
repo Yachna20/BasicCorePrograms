@@ -21,7 +21,7 @@ namespace BasicCoreCodes
                     Console.WriteLine(b + " is a factor of " + a);
                 }
             }
-            Console.ReadLine();
+            
 
 
         }
