@@ -8,8 +8,8 @@ namespace BasicCoreCodes
             while (true)
             {
                 Console.WriteLine("1.Flipcoin\n2.LeapYear\n3.PrimeFactors\n4.QuotientRemainder\n5.Swapping\n6.EvenorOdd"+
-                                   "\n7.VowelorConsonant");
-                     int option = Convert.ToInt32(Console.ReadLine());
+                                   "\n7.VowelorConsonant\n8.LargestAmong3Numbers");
+                int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
@@ -40,11 +40,12 @@ namespace BasicCoreCodes
                         Alphabet vow = new Alphabet();
                         vow.VowelConsonant();
                         break;
+                    case 8:
+                        LargestNumber large = new LargestNumber();
+                        large.Largest();
+                        break;
                     
-                        
-                        
-                        
-                    default:
+                       default:
                         Console.WriteLine("Please enter valid choice");
                         break;
                 }
